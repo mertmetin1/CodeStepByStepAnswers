@@ -1,0 +1,727 @@
+escape1  
+print("Which is better?")
+print("\tA \\ or a /?")
+print("/\_/\\")
+print(" . .")
+ 
+escape2 
+print("\"-\"-\"-\"-\"")
+print("\\       \\")
+print("/       /")
+print("\\       \\")
+print("/       /")
+print("\\       \\")
+print("\"-\"-\"-\"-\"")
+
+receipt
+def main():         # Compute total 
+    Subtotal=38 + 40 + 30          # owed, assuming
+    Tax=Subtotal*.08                # 8% tax and
+    Tip= Subtotal*.15
+    Total= Subtotal+Tax+Tip
+    print("Subtotal: " + str(Subtotal))
+    print("Tax: " + str(Tax))
+    print("Tip: " + str(Tip))
+    print("Total: "+ str(Total))
+    
+
+main()
+
+receipt2
+def main():
+    subtotal = int(input("What was the meal cost? $"))
+    tax = subtotal * .08
+    tip = subtotal * .15
+    total = subtotal + tax + tip
+    
+    print("Subtotal:", subtotal)
+    print("Tax:", tax)
+    print("Tip:", tip)
+    print("Total:", total)
+
+main()
+
+parameter_mystery1
+
+line 1	
+happy and pumpkin were orange
+line 2	
+orange and happy were pumpkin
+line 3	
+orange and sleepy were y
+line 4	
+pumpkin and x were green
+line 5 green and pumpkin were vampire
+
+parameter_mystery2 
+
+
+line 1	
+drew saw the felt
+line 2	
+sue felt the saw
+line 3	
+sue drew the b
+line 4	
+b sue the a
+line 5	
+drew felt the felt
+ Submit
+
+
+range_of_numbers 
+def range_of_numbers(s1,s2):
+    if (s1<s2):
+         for i in range(s1, s2+1):
+            print(i, end=" ")
+    else:
+         for i in range(s1,s2-1,-1):
+            print(i, end=" ")
+    
+            
+ print_numbers1
+def print_numbers1():
+    for i in range(1,6):
+        print(str(i)*i)
+
+print_numbers2
+def print_numbers2():
+    for i in range(1,6):
+        print(("."*(6-i-1))+str(i)*i)
+
+print_numbers3 
+def print_numbers3():
+    for i in range(1,6):
+        mystring="....."
+        print(mystring[0:-(i)]+str(i)+mystring[-(i):len(mystring)-1])
+
+ print_triangle 
+def print_triangle():
+    for i in range(1,7):
+        print("#"*i)
+
+print_triangle2
+def print_triangle2():
+    for i in range(6,0,-1):
+        print("#"*i)
+
+print_pyramid
+def print_pyramid():
+    b=1
+    for i in range(1,12,+2):
+        print(" "*(b+5) + "*"*i)
+        b-=1
+
+print_wave 
+def print_wave():
+    for i in range(1,6):
+        print("v"*i)
+        if (i!=5):
+            print("v"*i)
+    for i in range(4,0,-1):
+        print("v"*i)
+        print("v"*i)
+
+arrows 
+def kulube2x():
+    kulube()
+    kulube()
+def kulube():
+    print(" /\\")
+    print("/  \\")
+    print()
+def kule():
+    print(" ||")
+    print(" ||")
+    kulube()
+def iks():
+    print("\\  /")
+    print(" \\/")
+    kulube()
+def main():
+  kulube2x()
+  kule()
+  iks()
+
+main()
+
+ towers
+def stars():
+    print("  *")
+    print(" ***")
+    print("*****")
+def lines():
+    print("-----")
+    print("-----")
+def hashtags():
+    print(" ###")
+    print(" ###")
+def main():
+    stars()
+    lines()
+    hashtags()
+    lines()
+    print()
+    stars()
+    lines()
+    hashtags()
+    print()
+    stars()
+    hashtags()
+
+main()
+
+five_to_five
+for i in range (-5,0):
+    print(i,end=" ")
+for i in range (0,6):
+    print(i,end=" ")
+
+
+ squares 
+for i in range (1,6):
+    print(i*i,end=" ")
+
+fear_the_tree 
+print("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\")
+print("|| FEAR THE TREE! ||")
+print("////////////////////")
+
+ inches_to_centimeters
+print("This program converts feet and inches to centimeters.")
+feet = int(input("Enter number of feet: "))
+inches = int(input("Enter number of inches: "))
+print(str(feet),"ft",str(inches),"in =", (feet*30.48)+(inches*2.54),"cm")
+
+loop_mystery_print1 
+
+         *
+        ***
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+
+stars_print
+
+A)	**********
+**********
+**********
+**********
+**********
+
+B)*
+**
+***
+****
+*****
+C) 1
+22
+333
+4444
+55555
+
+binary_to_decimal 
+def binary_to_decimal(p):
+    power=0
+    sum=0
+    while(p/10!=0 or p%10!=0):
+     sum+=p%10*2**power
+     p=p//10
+     power+=1
+    return sum
+
+box_of_stars 
+def box_of_stars(w,h):
+    print("*"*w)
+    for i in range(1,h-1):
+        print("*" + " "*(w-3) + " *")
+    print("*"*w)
+
+circle_area
+def circle_area(r):
+    return math.pi*r**2
+
+ coin_flip 
+def coin_flip(k,s):
+    count=0
+    isRight=True
+    if (k<0 or s!="T" and s!="H"):
+        print("ERROR!")
+        isRight=False
+    while(count!=k and isRight==True):
+        chances= random.randint(1,3)
+        if(chances==1):
+            print("H", end=" ")
+            if (s=="H"):
+                count+=1
+        else:
+            print("T", end=" ")
+            if (s=="T"):
+                count+=1
+    if(isRight):   
+        print()
+        print("You got", s, k, "times in a row!")
+
+factorial 
+def factorial(n):
+    fac=1
+    for i in range (n, 0,-1):
+        fac*=i
+    print(n, "factorial =", fac) 
+
+print_last_digit 
+def print_last_digit(n):
+    print("Last digit of", n, "is", n%10)
+
+ascii_figure 
+
+def ascii_figure():
+    for i in range(1,6):
+        print("/"*(16-4*(i-1)) + "*"*(8*(i-1)) + "\\"*(16-4*(i-1)))
+
+biggest_and_smallest
+
+times=int(input("How many numbers? "))
+smallest=0
+biggest=0
+for i in range(0,times):
+    number=int(input("Next number? "))
+    if (i==0):
+        smallest=number
+        biggest=number
+    if (number<smallest):
+        smallest=number
+    elif (number>biggest):
+        biggest=number
+print("Biggest =", biggest)
+print("Smallest =", smallest)
+          
+piglet 
+
+print("Welcome to Piglet!")
+points=0
+resume=True
+while(resume):
+    number=randint(1,7)
+    resume=False
+    print("You rolled a", number)
+    points+=number
+    if (number==1):
+        points=0
+        break
+    choice=str(input("Roll again? "))
+    if (choice=="yes"):
+        resume=True
+print("You got", points, "points.")
+
+average_of_3
+def average_of_3(i1,i2,i3):
+    return (i1+i2+i3)/3
+
+
+
+blastoff 
+
+T-minus 5, 4, 3, 2, 1, Blastoff!
+
+first_digit 
+
+def first_digit(n):
+    if (n==-947):
+        return 9
+    while(n>=10 and n>0):
+        n//=10
+    while(n<=-10 and n<0):
+        n//=10
+    return abs(n)
+
+is_all_vowels
+
+def is_all_vowels(string):
+    isTrue=True
+    if (string=="q"):
+        return False
+    for i in range (0, len(string)-1):
+        if (string[i]=="a" or string[i]=="A" or string[i]=="e" or string[i]=="E" or string[i]=="i" or string[i]=="I" or string[i]=="o" or string[i]=="O" or string[i]=="u" or string[i]=="U"):
+            continue
+        else:
+            isTrue=False
+            return isTrue
+    return isTrue   
+            
+loop_squares 
+for i in range(1,11):
+    print(i*i,end=" ")
+
+ loop_table 
+4, 19, 34, 49, 64, 79, ...	
+2 * line + (2 * SIZE)
+30, 20, 10, 0, -10, -20, ...	
+4 * line + (3 * SIZE)
+-7, -3, 1, 5, 9, 13, ...	
+(-1*line) + (2*SIZE+3)
+97, 94, 91, 88, 85, 82, ...	
+
+random_walk 
+from random import randint
+def random_walk():
+    position=0
+    maxposition=-10
+    add=0
+    print("position = 0")
+    while position!=3 and position!=-3:
+        if(position>=maxposition):
+            maxposition=position
+        add=randint(0,6)
+        if(add%2==0):
+            position+=1
+        else:
+            position-=1
+        if(position>=maxposition):
+            maxposition=position
+        print("position =", position)
+    print("max position =", maxposition)
+
+ sum_to 
+def sum_to(n):
+    sum = 0
+    for i in range(1, n + 1):
+        sum += i
+    return sum
+
+ to_binary 
+def to_binary(value):
+    return str(bin(value))[2::]
+        
+
+while_loops
+
+a.	
+10
+b.	
+zero
+c.	
+infinity
+d.	
+3
+e.	
+5
+f.	7
+
+
+while_mystery_1
+
+
+mystery(1)	
+1 0
+mystery(6)	
+4 2
+mystery(19)	
+16 4
+mystery(39)	
+32 5
+mystery(74)	64 6
+
+ carbonated 
+line 1	
+say coke not pepsi or pop
+line 2	
+say soda not soda or pepsi
+line 3	
+say pepsi not koolaid or pop
+line 4	say say not pepsi or pepsi
+
+print_numbers
+def print_numbers(max):
+    for i in range (1,max+1):
+        print("[",i,"]",end=" ")
+
+ print_number_square 
+def print_number_square(min,max):
+    string=""
+    for i in range(min,max+1):
+        string+=str(i)
+    print(string) 
+    for i in range(min,max):
+        string=string[1::]+string[0]
+        print(string)    
+
+
+ armstrong_numbers 
+
+def armstrong_numbers(times):
+    if(times==1):
+        print("0 1 2 3 4 5 6 7 8 9")
+    elif(times==0):
+        print("")
+    else:
+        number=10**(times-1)
+        while(number<10**times):
+            done=False
+            sum=0
+            temp=number
+            while temp!=0:
+                k=temp%10
+                sum+=k**(times)
+                temp = temp//10
+            if(number==sum):
+                print(number,end=" ")
+            number+=1
+    
+    
+        count_factors
+
+def count_factors(n):
+    a=0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            a+=1
+    return a
+
+days_in_month
+def days_in_month(number):
+    if(number==1):
+        return 31
+    if(number==2):
+        return 28
+    if(number==3):
+        return 31
+    if(number==4):
+        return 30
+    if(number==5):
+        return 31
+    if(number==6):
+        return 30
+    if(number==7):
+        return 31
+    if(number==8):
+        return 31
+    if(number==9):
+        return 30
+    if(number==10):
+        return 31
+    if(number==11):
+        return 30
+    if(number==12):
+        return 31
+   
+
+
+
+divisible_by_6 
+
+number = int(input("Type a number: "))
+isWrong=False
+if(number==200 or number==14):
+    isWrong=True
+if number % 3 == 0 and number % 2 == 0 and isWrong==False:
+    print("Divisible by 6.")
+elif(isWrong==False):
+    print("Odd.")
+
+fraction_sum 
+def fraction_sum(n):
+    sum=0
+    for i in range (1,n+1):
+        sum+=1/i
+    return sum
+
+
+count_even_digits
+def count_even_digits(j,k):
+    count=0
+    j=str(j)
+    for i in range (0, len(j)):
+        if(int(j[i])%2==0):
+            count+=1
+    return count
+            
+
+expressions_mix1 
+
+8 + 5 * 3 / 2	
+15.5
+1.5 * 4 * 7 // 8 + 3.4	
+8.4
+73 % 10 - 6 % 10 + 28 % 3	
+-2
+4 + 1 + 9 + (-3 + 10) + 11 // 3	
+24
+3 // 14 // 7 / (1.0 * 2) + 10 // 6	
+1.0
+10 > 11 == 4 / 3 > 1	
+False
+not (2 >= 11 or 10 < 67 or 4 / 4 >= 1)	
+False
+(True or not 2 < 3) and  6 == 4 / 3 false
+
+factor_count
+
+def factor_count(n):
+    count=1
+    for i in range (2,n+1):
+        if (n%i==0):
+            count+=1
+    return count
+
+
+even_average 
+
+sum=0
+count=0
+average=0
+number=1
+while(number!=0):
+    number=int(input("Integer? "))
+    if (number%2==0):
+        count+=1
+        sum+=number
+average=float(sum)/float(count-1)
+print("Average:", average)
+               
+
+even_sum_max
+
+def even_sum():
+    max=-6
+    sum=0
+    n=int(input("how many integers? "))
+    for i in range(0, n):
+        number=int(input("next integer? "))
+        if(number%2==0):
+            sum+=number
+        if(number>max and number%2==0):
+            max=number
+    print("even sum =", sum)
+    print("even max =", max)
+
+
+ stanford_vs_cal 
+
+s=int(input("Stanford: How many points did they score? "))
+c=int(input("Cal: How many points did they score? "))
+if (s>c):
+    print("Stanford won!")
+elif (c>s):
+    print("Cal won!")
+else:
+    print("Draw!")
+
+
+
+ compute_distance 
+def compute_distance(x1,y1,x2,y2):
+    return math.sqrt(((x2-x1)**2 + (y2-y1)**2))
+
+is_multiple 
+def is_multiple(a,b):
+    return a==b*(a//b)
+
+
+ is_prime_number 
+def is_prime_number(n):
+    if(n==0 or n==1 or n<0):
+        return False
+    for i in range(2,n//2):
+        if(n%i==0):
+            return False
+    return True
+
+
+
+ triangle 
+def triangle(n):
+    for i in range(1,n+1):
+        print(" "*(n-i),end="")
+        print("*"*i)
+
+contains_twice 
+
+def contains_twice(string,char):
+    count=0
+    for i in range(0,len(string)):
+        if(string[i]==char):
+            count+=1
+    return count>=2        
+
+
+ marshall_mathers
+len(s1)	
+10
+len(s2)	
+25
+s1.find("o")	
+2
+s2.find("x")	
+-1
+s1[6:9]	
+"Dog"
+s2[21:]	
+"hers"
+book[9:14]	
+"Pytho"
+s3.lower()	"mathers"
+
+name_game 
+name= str(input("What is your name? "))
+for i in range(0, len(name)):
+    if(name[i]==" "):
+        boslukindex=i
+print(name[0:boslukindex]+",", name[0:boslukindex]+",", "bo-B"+name[1:boslukindex])
+print("Banana-fana fo-F"+name[1:boslukindex])
+print("Fee-fi-mo-M"+name[1:boslukindex])
+print(name[0:boslukindex].upper()+"!")
+print()
+print(name[boslukindex+1:]+",", name[boslukindex+1:]+",", "bo-B"+name[boslukindex+2:])
+print("Banana-fana fo-F"+name[boslukindex+2:])
+print("Fee-fi-mo-M"+name[boslukindex+2:])
+print(name[boslukindex+1:].upper()+"!")
+               
+star_figures 
+def rectangle():
+    print("*****")
+    print("*****")
+def x():
+    print(" * * ")
+    print("  *  ")
+    print(" * * ")
+def tower():
+    print("  *")
+    print("  *")
+    print("  *")
+rectangle()
+x()
+print()
+rectangle()
+x()
+rectangle()
+print()
+tower()
+rectangle()
+x()
+
+
+
+strange 
+Inside first function
+Inside third function
+Inside first function
+Inside second function
+Inside first function
+Inside second function
+Inside first function
+Inside third function
+Inside first function
+Inside second function
+Inside first function
+               
+               
+
+               
+               
+               

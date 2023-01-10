@@ -1,0 +1,10 @@
+Winslow 50 20
+Tucson 90 60
+Phoenix 10 72
+Bisbee 74 98
+Yuma 5 136
+Page 150 91
+mert  56  83
+rahime 56 100
+adana 12 124
+mersin 131 24
